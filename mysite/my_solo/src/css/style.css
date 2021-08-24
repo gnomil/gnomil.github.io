@@ -1,0 +1,5730 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+/* line 4, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*!
+ * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/* line 7, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+/* line 11, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+/* line 16, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  /* line 24, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 29, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 34, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 39, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* line 43, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 50, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* line 58, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 62, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 67, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 142, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+/* line 149, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+/* line 155, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-1 {
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+/* line 160, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+/* line 165, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+/* line 170, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+/* line 175, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-5 {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+/* line 180, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* line 185, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+/* line 190, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+/* line 195, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+/* line 200, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+/* line 205, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-11 {
+  -ms-flex: 0 0 91.666667%;
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+
+/* line 210, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* line 215, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-first {
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+/* line 219, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-last {
+  -ms-flex-order: 13;
+  order: 13;
+}
+
+/* line 223, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-0 {
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+/* line 227, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-1 {
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+/* line 231, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-2 {
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+/* line 235, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-3 {
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+/* line 239, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-4 {
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+/* line 243, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-5 {
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+/* line 247, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-6 {
+  -ms-flex-order: 6;
+  order: 6;
+}
+
+/* line 251, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-7 {
+  -ms-flex-order: 7;
+  order: 7;
+}
+
+/* line 255, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-8 {
+  -ms-flex-order: 8;
+  order: 8;
+}
+
+/* line 259, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-9 {
+  -ms-flex-order: 9;
+  order: 9;
+}
+
+/* line 263, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-10 {
+  -ms-flex-order: 10;
+  order: 10;
+}
+
+/* line 267, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-11 {
+  -ms-flex-order: 11;
+  order: 11;
+}
+
+/* line 271, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.order-12 {
+  -ms-flex-order: 12;
+  order: 12;
+}
+
+/* line 275, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.offset-1 {
+  margin-left: 8.333333%;
+}
+
+/* line 278, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.offset-2 {
+  margin-left: 16.666667%;
+}
+
+/* line 281, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.offset-3 {
+  margin-left: 25%;
+}
+
+/* line 284, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.offset-4 {
+  margin-left: 33.333333%;
+}
+
+/* line 287, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.offset-5 {
+  margin-left: 41.666667%;
+}
+
+/* line 290, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.offset-6 {
+  margin-left: 50%;
+}
+
+/* line 293, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.offset-7 {
+  margin-left: 58.333333%;
+}
+
+/* line 296, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.offset-8 {
+  margin-left: 66.666667%;
+}
+
+/* line 299, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.offset-9 {
+  margin-left: 75%;
+}
+
+/* line 302, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.offset-10 {
+  margin-left: 83.333333%;
+}
+
+/* line 305, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.offset-11 {
+  margin-left: 91.666667%;
+}
+
+@media (min-width: 576px) {
+  /* line 309, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 316, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  /* line 322, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  /* line 327, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  /* line 332, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 337, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  /* line 342, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  /* line 347, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 352, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  /* line 357, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  /* line 362, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 367, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  /* line 372, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  /* line 377, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 382, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  /* line 386, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-last {
+    -ms-flex-order: 13;
+    order: 13;
+  }
+  /* line 390, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-0 {
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  /* line 394, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  /* line 398, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  /* line 402, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  /* line 406, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  /* line 410, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  /* line 414, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  /* line 418, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-7 {
+    -ms-flex-order: 7;
+    order: 7;
+  }
+  /* line 422, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-8 {
+    -ms-flex-order: 8;
+    order: 8;
+  }
+  /* line 426, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-9 {
+    -ms-flex-order: 9;
+    order: 9;
+  }
+  /* line 430, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-10 {
+    -ms-flex-order: 10;
+    order: 10;
+  }
+  /* line 434, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-11 {
+    -ms-flex-order: 11;
+    order: 11;
+  }
+  /* line 438, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-sm-12 {
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  /* line 442, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-0 {
+    margin-left: 0;
+  }
+  /* line 445, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-1 {
+    margin-left: 8.333333%;
+  }
+  /* line 448, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-2 {
+    margin-left: 16.666667%;
+  }
+  /* line 451, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-3 {
+    margin-left: 25%;
+  }
+  /* line 454, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-4 {
+    margin-left: 33.333333%;
+  }
+  /* line 457, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-5 {
+    margin-left: 41.666667%;
+  }
+  /* line 460, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-6 {
+    margin-left: 50%;
+  }
+  /* line 463, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-7 {
+    margin-left: 58.333333%;
+  }
+  /* line 466, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-8 {
+    margin-left: 66.666667%;
+  }
+  /* line 469, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-9 {
+    margin-left: 75%;
+  }
+  /* line 472, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-10 {
+    margin-left: 83.333333%;
+  }
+  /* line 475, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-sm-11 {
+    margin-left: 91.666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 480, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 487, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  /* line 493, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  /* line 498, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  /* line 503, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 508, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  /* line 513, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  /* line 518, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 523, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  /* line 528, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  /* line 533, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 538, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  /* line 543, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  /* line 548, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 553, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  /* line 557, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-last {
+    -ms-flex-order: 13;
+    order: 13;
+  }
+  /* line 561, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-0 {
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  /* line 565, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  /* line 569, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  /* line 573, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  /* line 577, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  /* line 581, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  /* line 585, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  /* line 589, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-7 {
+    -ms-flex-order: 7;
+    order: 7;
+  }
+  /* line 593, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-8 {
+    -ms-flex-order: 8;
+    order: 8;
+  }
+  /* line 597, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-9 {
+    -ms-flex-order: 9;
+    order: 9;
+  }
+  /* line 601, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-10 {
+    -ms-flex-order: 10;
+    order: 10;
+  }
+  /* line 605, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-11 {
+    -ms-flex-order: 11;
+    order: 11;
+  }
+  /* line 609, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-md-12 {
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  /* line 613, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-0 {
+    margin-left: 0;
+  }
+  /* line 616, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-1 {
+    margin-left: 8.333333%;
+  }
+  /* line 619, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-2 {
+    margin-left: 16.666667%;
+  }
+  /* line 622, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-3 {
+    margin-left: 25%;
+  }
+  /* line 625, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-4 {
+    margin-left: 33.333333%;
+  }
+  /* line 628, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-5 {
+    margin-left: 41.666667%;
+  }
+  /* line 631, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-6 {
+    margin-left: 50%;
+  }
+  /* line 634, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-7 {
+    margin-left: 58.333333%;
+  }
+  /* line 637, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-8 {
+    margin-left: 66.666667%;
+  }
+  /* line 640, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-9 {
+    margin-left: 75%;
+  }
+  /* line 643, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-10 {
+    margin-left: 83.333333%;
+  }
+  /* line 646, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-md-11 {
+    margin-left: 91.666667%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 651, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 658, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  /* line 664, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  /* line 669, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  /* line 674, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 679, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  /* line 684, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  /* line 689, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 694, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  /* line 699, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  /* line 704, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 709, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  /* line 714, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  /* line 719, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-lg-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 724, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  /* line 728, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-last {
+    -ms-flex-order: 13;
+    order: 13;
+  }
+  /* line 732, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-0 {
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  /* line 736, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  /* line 740, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  /* line 744, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  /* line 748, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  /* line 752, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  /* line 756, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  /* line 760, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-7 {
+    -ms-flex-order: 7;
+    order: 7;
+  }
+  /* line 764, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-8 {
+    -ms-flex-order: 8;
+    order: 8;
+  }
+  /* line 768, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-9 {
+    -ms-flex-order: 9;
+    order: 9;
+  }
+  /* line 772, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-10 {
+    -ms-flex-order: 10;
+    order: 10;
+  }
+  /* line 776, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-11 {
+    -ms-flex-order: 11;
+    order: 11;
+  }
+  /* line 780, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-lg-12 {
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  /* line 784, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-0 {
+    margin-left: 0;
+  }
+  /* line 787, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-1 {
+    margin-left: 8.333333%;
+  }
+  /* line 790, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-2 {
+    margin-left: 16.666667%;
+  }
+  /* line 793, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-3 {
+    margin-left: 25%;
+  }
+  /* line 796, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-4 {
+    margin-left: 33.333333%;
+  }
+  /* line 799, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-5 {
+    margin-left: 41.666667%;
+  }
+  /* line 802, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-6 {
+    margin-left: 50%;
+  }
+  /* line 805, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-7 {
+    margin-left: 58.333333%;
+  }
+  /* line 808, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-8 {
+    margin-left: 66.666667%;
+  }
+  /* line 811, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-9 {
+    margin-left: 75%;
+  }
+  /* line 814, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-10 {
+    margin-left: 83.333333%;
+  }
+  /* line 817, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-lg-11 {
+    margin-left: 91.666667%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 822, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 829, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  /* line 835, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  /* line 840, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  /* line 845, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 850, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  /* line 855, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  /* line 860, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 865, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  /* line 870, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  /* line 875, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 880, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  /* line 885, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  /* line 890, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .col-xl-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 895, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  /* line 899, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-last {
+    -ms-flex-order: 13;
+    order: 13;
+  }
+  /* line 903, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-0 {
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  /* line 907, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  /* line 911, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  /* line 915, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  /* line 919, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  /* line 923, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  /* line 927, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  /* line 931, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-7 {
+    -ms-flex-order: 7;
+    order: 7;
+  }
+  /* line 935, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-8 {
+    -ms-flex-order: 8;
+    order: 8;
+  }
+  /* line 939, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-9 {
+    -ms-flex-order: 9;
+    order: 9;
+  }
+  /* line 943, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-10 {
+    -ms-flex-order: 10;
+    order: 10;
+  }
+  /* line 947, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-11 {
+    -ms-flex-order: 11;
+    order: 11;
+  }
+  /* line 951, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .order-xl-12 {
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  /* line 955, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-0 {
+    margin-left: 0;
+  }
+  /* line 958, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-1 {
+    margin-left: 8.333333%;
+  }
+  /* line 961, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-2 {
+    margin-left: 16.666667%;
+  }
+  /* line 964, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-3 {
+    margin-left: 25%;
+  }
+  /* line 967, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-4 {
+    margin-left: 33.333333%;
+  }
+  /* line 970, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-5 {
+    margin-left: 41.666667%;
+  }
+  /* line 973, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-6 {
+    margin-left: 50%;
+  }
+  /* line 976, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-7 {
+    margin-left: 58.333333%;
+  }
+  /* line 979, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-8 {
+    margin-left: 66.666667%;
+  }
+  /* line 982, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-9 {
+    margin-left: 75%;
+  }
+  /* line 985, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-10 {
+    margin-left: 83.333333%;
+  }
+  /* line 988, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .offset-xl-11 {
+    margin-left: 91.666667%;
+  }
+}
+
+/* line 992, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.d-none {
+  display: none !important;
+}
+
+/* line 995, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.d-inline {
+  display: inline !important;
+}
+
+/* line 998, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.d-inline-block {
+  display: inline-block !important;
+}
+
+/* line 1001, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.d-block {
+  display: block !important;
+}
+
+/* line 1004, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.d-table {
+  display: table !important;
+}
+
+/* line 1007, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.d-table-row {
+  display: table-row !important;
+}
+
+/* line 1010, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.d-table-cell {
+  display: table-cell !important;
+}
+
+/* line 1013, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+/* line 1017, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.d-inline-flex {
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+@media (min-width: 576px) {
+  /* line 1022, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-sm-none {
+    display: none !important;
+  }
+  /* line 1025, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-sm-inline {
+    display: inline !important;
+  }
+  /* line 1028, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-sm-inline-block {
+    display: inline-block !important;
+  }
+  /* line 1031, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-sm-block {
+    display: block !important;
+  }
+  /* line 1034, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-sm-table {
+    display: table !important;
+  }
+  /* line 1037, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-sm-table-row {
+    display: table-row !important;
+  }
+  /* line 1040, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-sm-table-cell {
+    display: table-cell !important;
+  }
+  /* line 1043, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-sm-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  /* line 1047, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-sm-inline-flex {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 1053, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-md-none {
+    display: none !important;
+  }
+  /* line 1056, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-md-inline {
+    display: inline !important;
+  }
+  /* line 1059, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-md-inline-block {
+    display: inline-block !important;
+  }
+  /* line 1062, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-md-block {
+    display: block !important;
+  }
+  /* line 1065, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-md-table {
+    display: table !important;
+  }
+  /* line 1068, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-md-table-row {
+    display: table-row !important;
+  }
+  /* line 1071, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-md-table-cell {
+    display: table-cell !important;
+  }
+  /* line 1074, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-md-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  /* line 1078, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-md-inline-flex {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 1084, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-lg-none {
+    display: none !important;
+  }
+  /* line 1087, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-lg-inline {
+    display: inline !important;
+  }
+  /* line 1090, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-lg-inline-block {
+    display: inline-block !important;
+  }
+  /* line 1093, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-lg-block {
+    display: block !important;
+  }
+  /* line 1096, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-lg-table {
+    display: table !important;
+  }
+  /* line 1099, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-lg-table-row {
+    display: table-row !important;
+  }
+  /* line 1102, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-lg-table-cell {
+    display: table-cell !important;
+  }
+  /* line 1105, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-lg-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  /* line 1109, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-lg-inline-flex {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 1115, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-xl-none {
+    display: none !important;
+  }
+  /* line 1118, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-xl-inline {
+    display: inline !important;
+  }
+  /* line 1121, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-xl-inline-block {
+    display: inline-block !important;
+  }
+  /* line 1124, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-xl-block {
+    display: block !important;
+  }
+  /* line 1127, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-xl-table {
+    display: table !important;
+  }
+  /* line 1130, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-xl-table-row {
+    display: table-row !important;
+  }
+  /* line 1133, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-xl-table-cell {
+    display: table-cell !important;
+  }
+  /* line 1136, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-xl-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  /* line 1140, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-xl-inline-flex {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+}
+
+@media print {
+  /* line 1146, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-print-none {
+    display: none !important;
+  }
+  /* line 1149, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-print-inline {
+    display: inline !important;
+  }
+  /* line 1152, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-print-inline-block {
+    display: inline-block !important;
+  }
+  /* line 1155, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-print-block {
+    display: block !important;
+  }
+  /* line 1158, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-print-table {
+    display: table !important;
+  }
+  /* line 1161, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-print-table-row {
+    display: table-row !important;
+  }
+  /* line 1164, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-print-table-cell {
+    display: table-cell !important;
+  }
+  /* line 1167, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-print-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  /* line 1171, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .d-print-inline-flex {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+}
+
+/* line 1176, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-row {
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+}
+
+/* line 1180, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-column {
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+}
+
+/* line 1184, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-row-reverse {
+  -ms-flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important;
+}
+
+/* line 1188, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-column-reverse {
+  -ms-flex-direction: column-reverse !important;
+  flex-direction: column-reverse !important;
+}
+
+/* line 1192, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-wrap {
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+}
+
+/* line 1196, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-nowrap {
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+
+/* line 1200, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-wrap-reverse {
+  -ms-flex-wrap: wrap-reverse !important;
+  flex-wrap: wrap-reverse !important;
+}
+
+/* line 1204, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-fill {
+  -ms-flex: 1 1 auto !important;
+  flex: 1 1 auto !important;
+}
+
+/* line 1208, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-grow-0 {
+  -ms-flex-positive: 0 !important;
+  flex-grow: 0 !important;
+}
+
+/* line 1212, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-grow-1 {
+  -ms-flex-positive: 1 !important;
+  flex-grow: 1 !important;
+}
+
+/* line 1216, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-shrink-0 {
+  -ms-flex-negative: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+/* line 1220, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.flex-shrink-1 {
+  -ms-flex-negative: 1 !important;
+  flex-shrink: 1 !important;
+}
+
+/* line 1224, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.justify-content-start {
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+/* line 1228, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.justify-content-end {
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+}
+
+/* line 1232, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+/* line 1236, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+/* line 1240, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.justify-content-around {
+  -ms-flex-pack: distribute !important;
+  justify-content: space-around !important;
+}
+
+/* line 1244, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-items-start {
+  -ms-flex-align: start !important;
+  align-items: flex-start !important;
+}
+
+/* line 1248, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-items-end {
+  -ms-flex-align: end !important;
+  align-items: flex-end !important;
+}
+
+/* line 1252, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+/* line 1256, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-items-baseline {
+  -ms-flex-align: baseline !important;
+  align-items: baseline !important;
+}
+
+/* line 1260, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-items-stretch {
+  -ms-flex-align: stretch !important;
+  align-items: stretch !important;
+}
+
+/* line 1264, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-content-start {
+  -ms-flex-line-pack: start !important;
+  align-content: flex-start !important;
+}
+
+/* line 1268, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-content-end {
+  -ms-flex-line-pack: end !important;
+  align-content: flex-end !important;
+}
+
+/* line 1272, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-content-center {
+  -ms-flex-line-pack: center !important;
+  align-content: center !important;
+}
+
+/* line 1276, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-content-between {
+  -ms-flex-line-pack: justify !important;
+  align-content: space-between !important;
+}
+
+/* line 1280, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-content-around {
+  -ms-flex-line-pack: distribute !important;
+  align-content: space-around !important;
+}
+
+/* line 1284, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-content-stretch {
+  -ms-flex-line-pack: stretch !important;
+  align-content: stretch !important;
+}
+
+/* line 1288, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-self-auto {
+  -ms-flex-item-align: auto !important;
+  align-self: auto !important;
+}
+
+/* line 1292, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-self-start {
+  -ms-flex-item-align: start !important;
+  align-self: flex-start !important;
+}
+
+/* line 1296, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-self-end {
+  -ms-flex-item-align: end !important;
+  align-self: flex-end !important;
+}
+
+/* line 1300, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-self-center {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+/* line 1304, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-self-baseline {
+  -ms-flex-item-align: baseline !important;
+  align-self: baseline !important;
+}
+
+/* line 1308, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.align-self-stretch {
+  -ms-flex-item-align: stretch !important;
+  align-self: stretch !important;
+}
+
+@media (min-width: 576px) {
+  /* line 1313, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-row {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  /* line 1317, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-column {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  /* line 1321, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-row-reverse {
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+  /* line 1325, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-column-reverse {
+    -ms-flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
+  }
+  /* line 1329, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+  /* line 1333, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-nowrap {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+  /* line 1337, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 1341, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-fill {
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+  }
+  /* line 1345, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-grow-0 {
+    -ms-flex-positive: 0 !important;
+    flex-grow: 0 !important;
+  }
+  /* line 1349, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-grow-1 {
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+  }
+  /* line 1353, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-shrink-0 {
+    -ms-flex-negative: 0 !important;
+    flex-shrink: 0 !important;
+  }
+  /* line 1357, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-sm-shrink-1 {
+    -ms-flex-negative: 1 !important;
+    flex-shrink: 1 !important;
+  }
+  /* line 1361, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-sm-start {
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+  /* line 1365, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-sm-end {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  /* line 1369, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-sm-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  /* line 1373, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-sm-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  /* line 1377, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-sm-around {
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+  }
+  /* line 1381, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-sm-start {
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+  /* line 1385, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-sm-end {
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+  }
+  /* line 1389, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-sm-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  /* line 1393, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-sm-baseline {
+    -ms-flex-align: baseline !important;
+    align-items: baseline !important;
+  }
+  /* line 1397, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-sm-stretch {
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+  }
+  /* line 1401, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-sm-start {
+    -ms-flex-line-pack: start !important;
+    align-content: flex-start !important;
+  }
+  /* line 1405, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-sm-end {
+    -ms-flex-line-pack: end !important;
+    align-content: flex-end !important;
+  }
+  /* line 1409, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-sm-center {
+    -ms-flex-line-pack: center !important;
+    align-content: center !important;
+  }
+  /* line 1413, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-sm-between {
+    -ms-flex-line-pack: justify !important;
+    align-content: space-between !important;
+  }
+  /* line 1417, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-sm-around {
+    -ms-flex-line-pack: distribute !important;
+    align-content: space-around !important;
+  }
+  /* line 1421, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-sm-stretch {
+    -ms-flex-line-pack: stretch !important;
+    align-content: stretch !important;
+  }
+  /* line 1425, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-sm-auto {
+    -ms-flex-item-align: auto !important;
+    align-self: auto !important;
+  }
+  /* line 1429, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-sm-start {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+  /* line 1433, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-sm-end {
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+  }
+  /* line 1437, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-sm-center {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+  /* line 1441, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-sm-baseline {
+    -ms-flex-item-align: baseline !important;
+    align-self: baseline !important;
+  }
+  /* line 1445, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-sm-stretch {
+    -ms-flex-item-align: stretch !important;
+    align-self: stretch !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 1451, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-row {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  /* line 1455, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-column {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  /* line 1459, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-row-reverse {
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+  /* line 1463, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-column-reverse {
+    -ms-flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
+  }
+  /* line 1467, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+  /* line 1471, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-nowrap {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+  /* line 1475, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 1479, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-fill {
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+  }
+  /* line 1483, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-grow-0 {
+    -ms-flex-positive: 0 !important;
+    flex-grow: 0 !important;
+  }
+  /* line 1487, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-grow-1 {
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+  }
+  /* line 1491, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-shrink-0 {
+    -ms-flex-negative: 0 !important;
+    flex-shrink: 0 !important;
+  }
+  /* line 1495, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-md-shrink-1 {
+    -ms-flex-negative: 1 !important;
+    flex-shrink: 1 !important;
+  }
+  /* line 1499, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-md-start {
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+  /* line 1503, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-md-end {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  /* line 1507, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-md-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  /* line 1511, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-md-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  /* line 1515, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-md-around {
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+  }
+  /* line 1519, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-md-start {
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+  /* line 1523, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-md-end {
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+  }
+  /* line 1527, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-md-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  /* line 1531, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-md-baseline {
+    -ms-flex-align: baseline !important;
+    align-items: baseline !important;
+  }
+  /* line 1535, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-md-stretch {
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+  }
+  /* line 1539, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-md-start {
+    -ms-flex-line-pack: start !important;
+    align-content: flex-start !important;
+  }
+  /* line 1543, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-md-end {
+    -ms-flex-line-pack: end !important;
+    align-content: flex-end !important;
+  }
+  /* line 1547, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-md-center {
+    -ms-flex-line-pack: center !important;
+    align-content: center !important;
+  }
+  /* line 1551, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-md-between {
+    -ms-flex-line-pack: justify !important;
+    align-content: space-between !important;
+  }
+  /* line 1555, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-md-around {
+    -ms-flex-line-pack: distribute !important;
+    align-content: space-around !important;
+  }
+  /* line 1559, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-md-stretch {
+    -ms-flex-line-pack: stretch !important;
+    align-content: stretch !important;
+  }
+  /* line 1563, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-md-auto {
+    -ms-flex-item-align: auto !important;
+    align-self: auto !important;
+  }
+  /* line 1567, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-md-start {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+  /* line 1571, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-md-end {
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+  }
+  /* line 1575, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-md-center {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+  /* line 1579, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-md-baseline {
+    -ms-flex-item-align: baseline !important;
+    align-self: baseline !important;
+  }
+  /* line 1583, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-md-stretch {
+    -ms-flex-item-align: stretch !important;
+    align-self: stretch !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 1589, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-row {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  /* line 1593, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-column {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  /* line 1597, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-row-reverse {
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+  /* line 1601, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-column-reverse {
+    -ms-flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
+  }
+  /* line 1605, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+  /* line 1609, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-nowrap {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+  /* line 1613, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 1617, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-fill {
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+  }
+  /* line 1621, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-grow-0 {
+    -ms-flex-positive: 0 !important;
+    flex-grow: 0 !important;
+  }
+  /* line 1625, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-grow-1 {
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+  }
+  /* line 1629, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-shrink-0 {
+    -ms-flex-negative: 0 !important;
+    flex-shrink: 0 !important;
+  }
+  /* line 1633, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-lg-shrink-1 {
+    -ms-flex-negative: 1 !important;
+    flex-shrink: 1 !important;
+  }
+  /* line 1637, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-lg-start {
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+  /* line 1641, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-lg-end {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  /* line 1645, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-lg-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  /* line 1649, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-lg-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  /* line 1653, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-lg-around {
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+  }
+  /* line 1657, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-lg-start {
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+  /* line 1661, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-lg-end {
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+  }
+  /* line 1665, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-lg-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  /* line 1669, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-lg-baseline {
+    -ms-flex-align: baseline !important;
+    align-items: baseline !important;
+  }
+  /* line 1673, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-lg-stretch {
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+  }
+  /* line 1677, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-lg-start {
+    -ms-flex-line-pack: start !important;
+    align-content: flex-start !important;
+  }
+  /* line 1681, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-lg-end {
+    -ms-flex-line-pack: end !important;
+    align-content: flex-end !important;
+  }
+  /* line 1685, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-lg-center {
+    -ms-flex-line-pack: center !important;
+    align-content: center !important;
+  }
+  /* line 1689, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-lg-between {
+    -ms-flex-line-pack: justify !important;
+    align-content: space-between !important;
+  }
+  /* line 1693, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-lg-around {
+    -ms-flex-line-pack: distribute !important;
+    align-content: space-around !important;
+  }
+  /* line 1697, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-lg-stretch {
+    -ms-flex-line-pack: stretch !important;
+    align-content: stretch !important;
+  }
+  /* line 1701, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-lg-auto {
+    -ms-flex-item-align: auto !important;
+    align-self: auto !important;
+  }
+  /* line 1705, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-lg-start {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+  /* line 1709, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-lg-end {
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+  }
+  /* line 1713, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-lg-center {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+  /* line 1717, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-lg-baseline {
+    -ms-flex-item-align: baseline !important;
+    align-self: baseline !important;
+  }
+  /* line 1721, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-lg-stretch {
+    -ms-flex-item-align: stretch !important;
+    align-self: stretch !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 1727, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-row {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  /* line 1731, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-column {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  /* line 1735, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-row-reverse {
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+  /* line 1739, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-column-reverse {
+    -ms-flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
+  }
+  /* line 1743, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+  /* line 1747, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-nowrap {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+  /* line 1751, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 1755, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-fill {
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+  }
+  /* line 1759, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-grow-0 {
+    -ms-flex-positive: 0 !important;
+    flex-grow: 0 !important;
+  }
+  /* line 1763, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-grow-1 {
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+  }
+  /* line 1767, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-shrink-0 {
+    -ms-flex-negative: 0 !important;
+    flex-shrink: 0 !important;
+  }
+  /* line 1771, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .flex-xl-shrink-1 {
+    -ms-flex-negative: 1 !important;
+    flex-shrink: 1 !important;
+  }
+  /* line 1775, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-xl-start {
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+  /* line 1779, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-xl-end {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  /* line 1783, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-xl-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  /* line 1787, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-xl-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  /* line 1791, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .justify-content-xl-around {
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+  }
+  /* line 1795, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-xl-start {
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+  /* line 1799, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-xl-end {
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+  }
+  /* line 1803, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-xl-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  /* line 1807, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-xl-baseline {
+    -ms-flex-align: baseline !important;
+    align-items: baseline !important;
+  }
+  /* line 1811, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-items-xl-stretch {
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+  }
+  /* line 1815, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-xl-start {
+    -ms-flex-line-pack: start !important;
+    align-content: flex-start !important;
+  }
+  /* line 1819, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-xl-end {
+    -ms-flex-line-pack: end !important;
+    align-content: flex-end !important;
+  }
+  /* line 1823, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-xl-center {
+    -ms-flex-line-pack: center !important;
+    align-content: center !important;
+  }
+  /* line 1827, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-xl-between {
+    -ms-flex-line-pack: justify !important;
+    align-content: space-between !important;
+  }
+  /* line 1831, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-xl-around {
+    -ms-flex-line-pack: distribute !important;
+    align-content: space-around !important;
+  }
+  /* line 1835, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-content-xl-stretch {
+    -ms-flex-line-pack: stretch !important;
+    align-content: stretch !important;
+  }
+  /* line 1839, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-xl-auto {
+    -ms-flex-item-align: auto !important;
+    align-self: auto !important;
+  }
+  /* line 1843, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-xl-start {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+  /* line 1847, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-xl-end {
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+  }
+  /* line 1851, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-xl-center {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+  /* line 1855, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-xl-baseline {
+    -ms-flex-item-align: baseline !important;
+    align-self: baseline !important;
+  }
+  /* line 1859, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .align-self-xl-stretch {
+    -ms-flex-item-align: stretch !important;
+    align-self: stretch !important;
+  }
+}
+
+/* line 1864, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-0 {
+  margin: 0 !important;
+}
+
+/* line 1867, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-0,
+.my-0 {
+  margin-top: 0 !important;
+}
+
+/* line 1871, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-0,
+.mx-0 {
+  margin-right: 0 !important;
+}
+
+/* line 1875, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-0,
+.my-0 {
+  margin-bottom: 0 !important;
+}
+
+/* line 1879, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-0,
+.mx-0 {
+  margin-left: 0 !important;
+}
+
+/* line 1883, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-1 {
+  margin: 0.25rem !important;
+}
+
+/* line 1886, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-1,
+.my-1 {
+  margin-top: 0.25rem !important;
+}
+
+/* line 1890, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-1,
+.mx-1 {
+  margin-right: 0.25rem !important;
+}
+
+/* line 1894, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-1,
+.my-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+/* line 1898, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-1,
+.mx-1 {
+  margin-left: 0.25rem !important;
+}
+
+/* line 1902, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-2 {
+  margin: 0.5rem !important;
+}
+
+/* line 1905, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-2,
+.my-2 {
+  margin-top: 0.5rem !important;
+}
+
+/* line 1909, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-2,
+.mx-2 {
+  margin-right: 0.5rem !important;
+}
+
+/* line 1913, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-2,
+.my-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+/* line 1917, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-2,
+.mx-2 {
+  margin-left: 0.5rem !important;
+}
+
+/* line 1921, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-3 {
+  margin: 1rem !important;
+}
+
+/* line 1924, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-3,
+.my-3 {
+  margin-top: 1rem !important;
+}
+
+/* line 1928, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-3,
+.mx-3 {
+  margin-right: 1rem !important;
+}
+
+/* line 1932, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+
+/* line 1936, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-3,
+.mx-3 {
+  margin-left: 1rem !important;
+}
+
+/* line 1940, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-4 {
+  margin: 1.5rem !important;
+}
+
+/* line 1943, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-4,
+.my-4 {
+  margin-top: 1.5rem !important;
+}
+
+/* line 1947, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-4,
+.mx-4 {
+  margin-right: 1.5rem !important;
+}
+
+/* line 1951, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-4,
+.my-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* line 1955, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-4,
+.mx-4 {
+  margin-left: 1.5rem !important;
+}
+
+/* line 1959, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-5 {
+  margin: 3rem !important;
+}
+
+/* line 1962, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-5,
+.my-5 {
+  margin-top: 3rem !important;
+}
+
+/* line 1966, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-5,
+.mx-5 {
+  margin-right: 3rem !important;
+}
+
+/* line 1970, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-5,
+.my-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* line 1974, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-5,
+.mx-5 {
+  margin-left: 3rem !important;
+}
+
+/* line 1978, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.p-0 {
+  padding: 0 !important;
+}
+
+/* line 1981, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pt-0,
+.py-0 {
+  padding-top: 0 !important;
+}
+
+/* line 1985, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pr-0,
+.px-0 {
+  padding-right: 0 !important;
+}
+
+/* line 1989, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pb-0,
+.py-0 {
+  padding-bottom: 0 !important;
+}
+
+/* line 1993, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pl-0,
+.px-0 {
+  padding-left: 0 !important;
+}
+
+/* line 1997, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.p-1 {
+  padding: 0.25rem !important;
+}
+
+/* line 2000, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pt-1,
+.py-1 {
+  padding-top: 0.25rem !important;
+}
+
+/* line 2004, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pr-1,
+.px-1 {
+  padding-right: 0.25rem !important;
+}
+
+/* line 2008, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pb-1,
+.py-1 {
+  padding-bottom: 0.25rem !important;
+}
+
+/* line 2012, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pl-1,
+.px-1 {
+  padding-left: 0.25rem !important;
+}
+
+/* line 2016, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+/* line 2019, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pt-2,
+.py-2 {
+  padding-top: 0.5rem !important;
+}
+
+/* line 2023, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pr-2,
+.px-2 {
+  padding-right: 0.5rem !important;
+}
+
+/* line 2027, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pb-2,
+.py-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+/* line 2031, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pl-2,
+.px-2 {
+  padding-left: 0.5rem !important;
+}
+
+/* line 2035, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.p-3 {
+  padding: 1rem !important;
+}
+
+/* line 2038, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pt-3,
+.py-3 {
+  padding-top: 1rem !important;
+}
+
+/* line 2042, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pr-3,
+.px-3 {
+  padding-right: 1rem !important;
+}
+
+/* line 2046, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pb-3,
+.py-3 {
+  padding-bottom: 1rem !important;
+}
+
+/* line 2050, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pl-3,
+.px-3 {
+  padding-left: 1rem !important;
+}
+
+/* line 2054, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+/* line 2057, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pt-4,
+.py-4 {
+  padding-top: 1.5rem !important;
+}
+
+/* line 2061, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pr-4,
+.px-4 {
+  padding-right: 1.5rem !important;
+}
+
+/* line 2065, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pb-4,
+.py-4 {
+  padding-bottom: 1.5rem !important;
+}
+
+/* line 2069, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pl-4,
+.px-4 {
+  padding-left: 1.5rem !important;
+}
+
+/* line 2073, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.p-5 {
+  padding: 3rem !important;
+}
+
+/* line 2076, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pt-5,
+.py-5 {
+  padding-top: 3rem !important;
+}
+
+/* line 2080, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pr-5,
+.px-5 {
+  padding-right: 3rem !important;
+}
+
+/* line 2084, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pb-5,
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+
+/* line 2088, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.pl-5,
+.px-5 {
+  padding-left: 3rem !important;
+}
+
+/* line 2092, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-n1 {
+  margin: -0.25rem !important;
+}
+
+/* line 2095, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-n1,
+.my-n1 {
+  margin-top: -0.25rem !important;
+}
+
+/* line 2099, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-n1,
+.mx-n1 {
+  margin-right: -0.25rem !important;
+}
+
+/* line 2103, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-n1,
+.my-n1 {
+  margin-bottom: -0.25rem !important;
+}
+
+/* line 2107, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-n1,
+.mx-n1 {
+  margin-left: -0.25rem !important;
+}
+
+/* line 2111, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-n2 {
+  margin: -0.5rem !important;
+}
+
+/* line 2114, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-n2,
+.my-n2 {
+  margin-top: -0.5rem !important;
+}
+
+/* line 2118, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-n2,
+.mx-n2 {
+  margin-right: -0.5rem !important;
+}
+
+/* line 2122, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-n2,
+.my-n2 {
+  margin-bottom: -0.5rem !important;
+}
+
+/* line 2126, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-n2,
+.mx-n2 {
+  margin-left: -0.5rem !important;
+}
+
+/* line 2130, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-n3 {
+  margin: -1rem !important;
+}
+
+/* line 2133, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-n3,
+.my-n3 {
+  margin-top: -1rem !important;
+}
+
+/* line 2137, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-n3,
+.mx-n3 {
+  margin-right: -1rem !important;
+}
+
+/* line 2141, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-n3,
+.my-n3 {
+  margin-bottom: -1rem !important;
+}
+
+/* line 2145, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-n3,
+.mx-n3 {
+  margin-left: -1rem !important;
+}
+
+/* line 2149, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-n4 {
+  margin: -1.5rem !important;
+}
+
+/* line 2152, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-n4,
+.my-n4 {
+  margin-top: -1.5rem !important;
+}
+
+/* line 2156, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-n4,
+.mx-n4 {
+  margin-right: -1.5rem !important;
+}
+
+/* line 2160, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-n4,
+.my-n4 {
+  margin-bottom: -1.5rem !important;
+}
+
+/* line 2164, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-n4,
+.mx-n4 {
+  margin-left: -1.5rem !important;
+}
+
+/* line 2168, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-n5 {
+  margin: -3rem !important;
+}
+
+/* line 2171, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-n5,
+.my-n5 {
+  margin-top: -3rem !important;
+}
+
+/* line 2175, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-n5,
+.mx-n5 {
+  margin-right: -3rem !important;
+}
+
+/* line 2179, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-n5,
+.my-n5 {
+  margin-bottom: -3rem !important;
+}
+
+/* line 2183, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-n5,
+.mx-n5 {
+  margin-left: -3rem !important;
+}
+
+/* line 2187, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.m-auto {
+  margin: auto !important;
+}
+
+/* line 2190, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mt-auto,
+.my-auto {
+  margin-top: auto !important;
+}
+
+/* line 2194, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+
+/* line 2198, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.mb-auto,
+.my-auto {
+  margin-bottom: auto !important;
+}
+
+/* line 2202, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+
+@media (min-width: 576px) {
+  /* line 2207, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-0 {
+    margin: 0 !important;
+  }
+  /* line 2210, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-0,
+  .my-sm-0 {
+    margin-top: 0 !important;
+  }
+  /* line 2214, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-0,
+  .mx-sm-0 {
+    margin-right: 0 !important;
+  }
+  /* line 2218, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-0,
+  .my-sm-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 2222, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-0,
+  .mx-sm-0 {
+    margin-left: 0 !important;
+  }
+  /* line 2226, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 2229, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-1,
+  .my-sm-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 2233, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-1,
+  .mx-sm-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 2237, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-1,
+  .my-sm-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 2241, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-1,
+  .mx-sm-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 2245, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 2248, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-2,
+  .my-sm-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 2252, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-2,
+  .mx-sm-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 2256, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-2,
+  .my-sm-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 2260, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-2,
+  .mx-sm-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 2264, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-3 {
+    margin: 1rem !important;
+  }
+  /* line 2267, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-3,
+  .my-sm-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 2271, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-3,
+  .mx-sm-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 2275, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-3,
+  .my-sm-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 2279, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-3,
+  .mx-sm-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 2283, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 2286, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-4,
+  .my-sm-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 2290, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-4,
+  .mx-sm-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 2294, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-4,
+  .my-sm-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 2298, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-4,
+  .mx-sm-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 2302, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-5 {
+    margin: 3rem !important;
+  }
+  /* line 2305, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-5,
+  .my-sm-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 2309, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-5,
+  .mx-sm-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 2313, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-5,
+  .my-sm-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 2317, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-5,
+  .mx-sm-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 2321, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-sm-0 {
+    padding: 0 !important;
+  }
+  /* line 2324, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-sm-0,
+  .py-sm-0 {
+    padding-top: 0 !important;
+  }
+  /* line 2328, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-sm-0,
+  .px-sm-0 {
+    padding-right: 0 !important;
+  }
+  /* line 2332, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-sm-0,
+  .py-sm-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 2336, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-sm-0,
+  .px-sm-0 {
+    padding-left: 0 !important;
+  }
+  /* line 2340, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-sm-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 2343, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-sm-1,
+  .py-sm-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 2347, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-sm-1,
+  .px-sm-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 2351, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-sm-1,
+  .py-sm-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 2355, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-sm-1,
+  .px-sm-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 2359, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-sm-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 2362, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-sm-2,
+  .py-sm-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 2366, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-sm-2,
+  .px-sm-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 2370, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-sm-2,
+  .py-sm-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 2374, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-sm-2,
+  .px-sm-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 2378, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-sm-3 {
+    padding: 1rem !important;
+  }
+  /* line 2381, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-sm-3,
+  .py-sm-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 2385, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-sm-3,
+  .px-sm-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 2389, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-sm-3,
+  .py-sm-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 2393, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-sm-3,
+  .px-sm-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 2397, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-sm-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 2400, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-sm-4,
+  .py-sm-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 2404, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-sm-4,
+  .px-sm-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 2408, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-sm-4,
+  .py-sm-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 2412, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-sm-4,
+  .px-sm-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 2416, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-sm-5 {
+    padding: 3rem !important;
+  }
+  /* line 2419, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-sm-5,
+  .py-sm-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 2423, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-sm-5,
+  .px-sm-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 2427, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-sm-5,
+  .py-sm-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 2431, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-sm-5,
+  .px-sm-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 2435, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-n1 {
+    margin: -0.25rem !important;
+  }
+  /* line 2438, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-n1,
+  .my-sm-n1 {
+    margin-top: -0.25rem !important;
+  }
+  /* line 2442, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-n1,
+  .mx-sm-n1 {
+    margin-right: -0.25rem !important;
+  }
+  /* line 2446, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-n1,
+  .my-sm-n1 {
+    margin-bottom: -0.25rem !important;
+  }
+  /* line 2450, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-n1,
+  .mx-sm-n1 {
+    margin-left: -0.25rem !important;
+  }
+  /* line 2454, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-n2 {
+    margin: -0.5rem !important;
+  }
+  /* line 2457, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-n2,
+  .my-sm-n2 {
+    margin-top: -0.5rem !important;
+  }
+  /* line 2461, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-n2,
+  .mx-sm-n2 {
+    margin-right: -0.5rem !important;
+  }
+  /* line 2465, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-n2,
+  .my-sm-n2 {
+    margin-bottom: -0.5rem !important;
+  }
+  /* line 2469, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-n2,
+  .mx-sm-n2 {
+    margin-left: -0.5rem !important;
+  }
+  /* line 2473, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-n3 {
+    margin: -1rem !important;
+  }
+  /* line 2476, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-n3,
+  .my-sm-n3 {
+    margin-top: -1rem !important;
+  }
+  /* line 2480, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-n3,
+  .mx-sm-n3 {
+    margin-right: -1rem !important;
+  }
+  /* line 2484, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-n3,
+  .my-sm-n3 {
+    margin-bottom: -1rem !important;
+  }
+  /* line 2488, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-n3,
+  .mx-sm-n3 {
+    margin-left: -1rem !important;
+  }
+  /* line 2492, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-n4 {
+    margin: -1.5rem !important;
+  }
+  /* line 2495, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-n4,
+  .my-sm-n4 {
+    margin-top: -1.5rem !important;
+  }
+  /* line 2499, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-n4,
+  .mx-sm-n4 {
+    margin-right: -1.5rem !important;
+  }
+  /* line 2503, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-n4,
+  .my-sm-n4 {
+    margin-bottom: -1.5rem !important;
+  }
+  /* line 2507, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-n4,
+  .mx-sm-n4 {
+    margin-left: -1.5rem !important;
+  }
+  /* line 2511, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-n5 {
+    margin: -3rem !important;
+  }
+  /* line 2514, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-n5,
+  .my-sm-n5 {
+    margin-top: -3rem !important;
+  }
+  /* line 2518, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-n5,
+  .mx-sm-n5 {
+    margin-right: -3rem !important;
+  }
+  /* line 2522, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-n5,
+  .my-sm-n5 {
+    margin-bottom: -3rem !important;
+  }
+  /* line 2526, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-n5,
+  .mx-sm-n5 {
+    margin-left: -3rem !important;
+  }
+  /* line 2530, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-sm-auto {
+    margin: auto !important;
+  }
+  /* line 2533, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-sm-auto,
+  .my-sm-auto {
+    margin-top: auto !important;
+  }
+  /* line 2537, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-sm-auto,
+  .mx-sm-auto {
+    margin-right: auto !important;
+  }
+  /* line 2541, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-sm-auto,
+  .my-sm-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 2545, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-sm-auto,
+  .mx-sm-auto {
+    margin-left: auto !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 2551, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-0 {
+    margin: 0 !important;
+  }
+  /* line 2554, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-0,
+  .my-md-0 {
+    margin-top: 0 !important;
+  }
+  /* line 2558, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-0,
+  .mx-md-0 {
+    margin-right: 0 !important;
+  }
+  /* line 2562, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-0,
+  .my-md-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 2566, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-0,
+  .mx-md-0 {
+    margin-left: 0 !important;
+  }
+  /* line 2570, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 2573, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-1,
+  .my-md-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 2577, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-1,
+  .mx-md-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 2581, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-1,
+  .my-md-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 2585, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-1,
+  .mx-md-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 2589, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 2592, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-2,
+  .my-md-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 2596, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-2,
+  .mx-md-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 2600, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-2,
+  .my-md-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 2604, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-2,
+  .mx-md-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 2608, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-3 {
+    margin: 1rem !important;
+  }
+  /* line 2611, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-3,
+  .my-md-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 2615, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-3,
+  .mx-md-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 2619, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-3,
+  .my-md-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 2623, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-3,
+  .mx-md-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 2627, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 2630, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-4,
+  .my-md-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 2634, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-4,
+  .mx-md-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 2638, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-4,
+  .my-md-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 2642, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-4,
+  .mx-md-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 2646, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-5 {
+    margin: 3rem !important;
+  }
+  /* line 2649, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-5,
+  .my-md-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 2653, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-5,
+  .mx-md-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 2657, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-5,
+  .my-md-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 2661, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-5,
+  .mx-md-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 2665, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-md-0 {
+    padding: 0 !important;
+  }
+  /* line 2668, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-md-0,
+  .py-md-0 {
+    padding-top: 0 !important;
+  }
+  /* line 2672, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-md-0,
+  .px-md-0 {
+    padding-right: 0 !important;
+  }
+  /* line 2676, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-md-0,
+  .py-md-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 2680, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-md-0,
+  .px-md-0 {
+    padding-left: 0 !important;
+  }
+  /* line 2684, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-md-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 2687, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-md-1,
+  .py-md-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 2691, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-md-1,
+  .px-md-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 2695, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-md-1,
+  .py-md-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 2699, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-md-1,
+  .px-md-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 2703, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-md-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 2706, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-md-2,
+  .py-md-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 2710, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-md-2,
+  .px-md-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 2714, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-md-2,
+  .py-md-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 2718, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-md-2,
+  .px-md-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 2722, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-md-3 {
+    padding: 1rem !important;
+  }
+  /* line 2725, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-md-3,
+  .py-md-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 2729, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-md-3,
+  .px-md-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 2733, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-md-3,
+  .py-md-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 2737, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-md-3,
+  .px-md-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 2741, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-md-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 2744, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-md-4,
+  .py-md-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 2748, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-md-4,
+  .px-md-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 2752, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-md-4,
+  .py-md-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 2756, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-md-4,
+  .px-md-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 2760, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-md-5 {
+    padding: 3rem !important;
+  }
+  /* line 2763, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-md-5,
+  .py-md-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 2767, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-md-5,
+  .px-md-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 2771, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-md-5,
+  .py-md-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 2775, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-md-5,
+  .px-md-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 2779, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-n1 {
+    margin: -0.25rem !important;
+  }
+  /* line 2782, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-n1,
+  .my-md-n1 {
+    margin-top: -0.25rem !important;
+  }
+  /* line 2786, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-n1,
+  .mx-md-n1 {
+    margin-right: -0.25rem !important;
+  }
+  /* line 2790, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-n1,
+  .my-md-n1 {
+    margin-bottom: -0.25rem !important;
+  }
+  /* line 2794, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-n1,
+  .mx-md-n1 {
+    margin-left: -0.25rem !important;
+  }
+  /* line 2798, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-n2 {
+    margin: -0.5rem !important;
+  }
+  /* line 2801, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-n2,
+  .my-md-n2 {
+    margin-top: -0.5rem !important;
+  }
+  /* line 2805, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-n2,
+  .mx-md-n2 {
+    margin-right: -0.5rem !important;
+  }
+  /* line 2809, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-n2,
+  .my-md-n2 {
+    margin-bottom: -0.5rem !important;
+  }
+  /* line 2813, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-n2,
+  .mx-md-n2 {
+    margin-left: -0.5rem !important;
+  }
+  /* line 2817, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-n3 {
+    margin: -1rem !important;
+  }
+  /* line 2820, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-n3,
+  .my-md-n3 {
+    margin-top: -1rem !important;
+  }
+  /* line 2824, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-n3,
+  .mx-md-n3 {
+    margin-right: -1rem !important;
+  }
+  /* line 2828, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-n3,
+  .my-md-n3 {
+    margin-bottom: -1rem !important;
+  }
+  /* line 2832, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-n3,
+  .mx-md-n3 {
+    margin-left: -1rem !important;
+  }
+  /* line 2836, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-n4 {
+    margin: -1.5rem !important;
+  }
+  /* line 2839, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-n4,
+  .my-md-n4 {
+    margin-top: -1.5rem !important;
+  }
+  /* line 2843, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-n4,
+  .mx-md-n4 {
+    margin-right: -1.5rem !important;
+  }
+  /* line 2847, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-n4,
+  .my-md-n4 {
+    margin-bottom: -1.5rem !important;
+  }
+  /* line 2851, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-n4,
+  .mx-md-n4 {
+    margin-left: -1.5rem !important;
+  }
+  /* line 2855, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-n5 {
+    margin: -3rem !important;
+  }
+  /* line 2858, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-n5,
+  .my-md-n5 {
+    margin-top: -3rem !important;
+  }
+  /* line 2862, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-n5,
+  .mx-md-n5 {
+    margin-right: -3rem !important;
+  }
+  /* line 2866, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-n5,
+  .my-md-n5 {
+    margin-bottom: -3rem !important;
+  }
+  /* line 2870, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-n5,
+  .mx-md-n5 {
+    margin-left: -3rem !important;
+  }
+  /* line 2874, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-md-auto {
+    margin: auto !important;
+  }
+  /* line 2877, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-md-auto,
+  .my-md-auto {
+    margin-top: auto !important;
+  }
+  /* line 2881, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-md-auto,
+  .mx-md-auto {
+    margin-right: auto !important;
+  }
+  /* line 2885, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-md-auto,
+  .my-md-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 2889, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-md-auto,
+  .mx-md-auto {
+    margin-left: auto !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 2895, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-0 {
+    margin: 0 !important;
+  }
+  /* line 2898, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-0,
+  .my-lg-0 {
+    margin-top: 0 !important;
+  }
+  /* line 2902, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-0,
+  .mx-lg-0 {
+    margin-right: 0 !important;
+  }
+  /* line 2906, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-0,
+  .my-lg-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 2910, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-0,
+  .mx-lg-0 {
+    margin-left: 0 !important;
+  }
+  /* line 2914, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 2917, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-1,
+  .my-lg-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 2921, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-1,
+  .mx-lg-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 2925, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-1,
+  .my-lg-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 2929, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-1,
+  .mx-lg-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 2933, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 2936, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-2,
+  .my-lg-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 2940, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-2,
+  .mx-lg-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 2944, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-2,
+  .my-lg-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 2948, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-2,
+  .mx-lg-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 2952, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-3 {
+    margin: 1rem !important;
+  }
+  /* line 2955, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-3,
+  .my-lg-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 2959, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-3,
+  .mx-lg-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 2963, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-3,
+  .my-lg-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 2967, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-3,
+  .mx-lg-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 2971, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 2974, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-4,
+  .my-lg-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 2978, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-4,
+  .mx-lg-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 2982, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-4,
+  .my-lg-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 2986, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-4,
+  .mx-lg-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 2990, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-5 {
+    margin: 3rem !important;
+  }
+  /* line 2993, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-5,
+  .my-lg-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 2997, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-5,
+  .mx-lg-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 3001, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-5,
+  .my-lg-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 3005, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-5,
+  .mx-lg-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 3009, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-lg-0 {
+    padding: 0 !important;
+  }
+  /* line 3012, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-lg-0,
+  .py-lg-0 {
+    padding-top: 0 !important;
+  }
+  /* line 3016, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-lg-0,
+  .px-lg-0 {
+    padding-right: 0 !important;
+  }
+  /* line 3020, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-lg-0,
+  .py-lg-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 3024, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-lg-0,
+  .px-lg-0 {
+    padding-left: 0 !important;
+  }
+  /* line 3028, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-lg-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 3031, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-lg-1,
+  .py-lg-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 3035, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-lg-1,
+  .px-lg-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 3039, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-lg-1,
+  .py-lg-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 3043, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-lg-1,
+  .px-lg-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 3047, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-lg-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 3050, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-lg-2,
+  .py-lg-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 3054, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-lg-2,
+  .px-lg-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 3058, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-lg-2,
+  .py-lg-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 3062, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-lg-2,
+  .px-lg-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 3066, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-lg-3 {
+    padding: 1rem !important;
+  }
+  /* line 3069, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-lg-3,
+  .py-lg-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 3073, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-lg-3,
+  .px-lg-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 3077, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-lg-3,
+  .py-lg-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 3081, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-lg-3,
+  .px-lg-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 3085, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-lg-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 3088, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-lg-4,
+  .py-lg-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 3092, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-lg-4,
+  .px-lg-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 3096, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-lg-4,
+  .py-lg-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 3100, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-lg-4,
+  .px-lg-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 3104, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-lg-5 {
+    padding: 3rem !important;
+  }
+  /* line 3107, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-lg-5,
+  .py-lg-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 3111, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-lg-5,
+  .px-lg-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 3115, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-lg-5,
+  .py-lg-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 3119, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-lg-5,
+  .px-lg-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 3123, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-n1 {
+    margin: -0.25rem !important;
+  }
+  /* line 3126, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-n1,
+  .my-lg-n1 {
+    margin-top: -0.25rem !important;
+  }
+  /* line 3130, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-n1,
+  .mx-lg-n1 {
+    margin-right: -0.25rem !important;
+  }
+  /* line 3134, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-n1,
+  .my-lg-n1 {
+    margin-bottom: -0.25rem !important;
+  }
+  /* line 3138, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-n1,
+  .mx-lg-n1 {
+    margin-left: -0.25rem !important;
+  }
+  /* line 3142, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-n2 {
+    margin: -0.5rem !important;
+  }
+  /* line 3145, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-n2,
+  .my-lg-n2 {
+    margin-top: -0.5rem !important;
+  }
+  /* line 3149, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-n2,
+  .mx-lg-n2 {
+    margin-right: -0.5rem !important;
+  }
+  /* line 3153, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-n2,
+  .my-lg-n2 {
+    margin-bottom: -0.5rem !important;
+  }
+  /* line 3157, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-n2,
+  .mx-lg-n2 {
+    margin-left: -0.5rem !important;
+  }
+  /* line 3161, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-n3 {
+    margin: -1rem !important;
+  }
+  /* line 3164, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-n3,
+  .my-lg-n3 {
+    margin-top: -1rem !important;
+  }
+  /* line 3168, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-n3,
+  .mx-lg-n3 {
+    margin-right: -1rem !important;
+  }
+  /* line 3172, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-n3,
+  .my-lg-n3 {
+    margin-bottom: -1rem !important;
+  }
+  /* line 3176, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-n3,
+  .mx-lg-n3 {
+    margin-left: -1rem !important;
+  }
+  /* line 3180, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-n4 {
+    margin: -1.5rem !important;
+  }
+  /* line 3183, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-n4,
+  .my-lg-n4 {
+    margin-top: -1.5rem !important;
+  }
+  /* line 3187, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-n4,
+  .mx-lg-n4 {
+    margin-right: -1.5rem !important;
+  }
+  /* line 3191, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-n4,
+  .my-lg-n4 {
+    margin-bottom: -1.5rem !important;
+  }
+  /* line 3195, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-n4,
+  .mx-lg-n4 {
+    margin-left: -1.5rem !important;
+  }
+  /* line 3199, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-n5 {
+    margin: -3rem !important;
+  }
+  /* line 3202, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-n5,
+  .my-lg-n5 {
+    margin-top: -3rem !important;
+  }
+  /* line 3206, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-n5,
+  .mx-lg-n5 {
+    margin-right: -3rem !important;
+  }
+  /* line 3210, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-n5,
+  .my-lg-n5 {
+    margin-bottom: -3rem !important;
+  }
+  /* line 3214, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-n5,
+  .mx-lg-n5 {
+    margin-left: -3rem !important;
+  }
+  /* line 3218, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-lg-auto {
+    margin: auto !important;
+  }
+  /* line 3221, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-lg-auto,
+  .my-lg-auto {
+    margin-top: auto !important;
+  }
+  /* line 3225, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-lg-auto,
+  .mx-lg-auto {
+    margin-right: auto !important;
+  }
+  /* line 3229, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-lg-auto,
+  .my-lg-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 3233, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-lg-auto,
+  .mx-lg-auto {
+    margin-left: auto !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 3239, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-0 {
+    margin: 0 !important;
+  }
+  /* line 3242, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-0,
+  .my-xl-0 {
+    margin-top: 0 !important;
+  }
+  /* line 3246, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-0,
+  .mx-xl-0 {
+    margin-right: 0 !important;
+  }
+  /* line 3250, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-0,
+  .my-xl-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 3254, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-0,
+  .mx-xl-0 {
+    margin-left: 0 !important;
+  }
+  /* line 3258, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 3261, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-1,
+  .my-xl-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 3265, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-1,
+  .mx-xl-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 3269, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-1,
+  .my-xl-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 3273, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-1,
+  .mx-xl-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 3277, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 3280, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-2,
+  .my-xl-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 3284, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-2,
+  .mx-xl-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 3288, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-2,
+  .my-xl-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 3292, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-2,
+  .mx-xl-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 3296, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-3 {
+    margin: 1rem !important;
+  }
+  /* line 3299, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-3,
+  .my-xl-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 3303, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-3,
+  .mx-xl-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 3307, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-3,
+  .my-xl-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 3311, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-3,
+  .mx-xl-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 3315, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 3318, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-4,
+  .my-xl-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 3322, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-4,
+  .mx-xl-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 3326, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-4,
+  .my-xl-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 3330, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-4,
+  .mx-xl-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 3334, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-5 {
+    margin: 3rem !important;
+  }
+  /* line 3337, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-5,
+  .my-xl-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 3341, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-5,
+  .mx-xl-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 3345, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-5,
+  .my-xl-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 3349, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-5,
+  .mx-xl-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 3353, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-xl-0 {
+    padding: 0 !important;
+  }
+  /* line 3356, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-xl-0,
+  .py-xl-0 {
+    padding-top: 0 !important;
+  }
+  /* line 3360, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-xl-0,
+  .px-xl-0 {
+    padding-right: 0 !important;
+  }
+  /* line 3364, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-xl-0,
+  .py-xl-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 3368, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-xl-0,
+  .px-xl-0 {
+    padding-left: 0 !important;
+  }
+  /* line 3372, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-xl-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 3375, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-xl-1,
+  .py-xl-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 3379, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-xl-1,
+  .px-xl-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 3383, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-xl-1,
+  .py-xl-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 3387, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-xl-1,
+  .px-xl-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 3391, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-xl-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 3394, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-xl-2,
+  .py-xl-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 3398, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-xl-2,
+  .px-xl-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 3402, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-xl-2,
+  .py-xl-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 3406, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-xl-2,
+  .px-xl-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 3410, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-xl-3 {
+    padding: 1rem !important;
+  }
+  /* line 3413, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-xl-3,
+  .py-xl-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 3417, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-xl-3,
+  .px-xl-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 3421, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-xl-3,
+  .py-xl-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 3425, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-xl-3,
+  .px-xl-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 3429, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-xl-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 3432, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-xl-4,
+  .py-xl-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 3436, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-xl-4,
+  .px-xl-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 3440, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-xl-4,
+  .py-xl-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 3444, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-xl-4,
+  .px-xl-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 3448, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .p-xl-5 {
+    padding: 3rem !important;
+  }
+  /* line 3451, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pt-xl-5,
+  .py-xl-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 3455, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pr-xl-5,
+  .px-xl-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 3459, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pb-xl-5,
+  .py-xl-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 3463, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .pl-xl-5,
+  .px-xl-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 3467, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-n1 {
+    margin: -0.25rem !important;
+  }
+  /* line 3470, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-n1,
+  .my-xl-n1 {
+    margin-top: -0.25rem !important;
+  }
+  /* line 3474, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-n1,
+  .mx-xl-n1 {
+    margin-right: -0.25rem !important;
+  }
+  /* line 3478, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-n1,
+  .my-xl-n1 {
+    margin-bottom: -0.25rem !important;
+  }
+  /* line 3482, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-n1,
+  .mx-xl-n1 {
+    margin-left: -0.25rem !important;
+  }
+  /* line 3486, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-n2 {
+    margin: -0.5rem !important;
+  }
+  /* line 3489, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-n2,
+  .my-xl-n2 {
+    margin-top: -0.5rem !important;
+  }
+  /* line 3493, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-n2,
+  .mx-xl-n2 {
+    margin-right: -0.5rem !important;
+  }
+  /* line 3497, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-n2,
+  .my-xl-n2 {
+    margin-bottom: -0.5rem !important;
+  }
+  /* line 3501, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-n2,
+  .mx-xl-n2 {
+    margin-left: -0.5rem !important;
+  }
+  /* line 3505, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-n3 {
+    margin: -1rem !important;
+  }
+  /* line 3508, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-n3,
+  .my-xl-n3 {
+    margin-top: -1rem !important;
+  }
+  /* line 3512, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-n3,
+  .mx-xl-n3 {
+    margin-right: -1rem !important;
+  }
+  /* line 3516, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-n3,
+  .my-xl-n3 {
+    margin-bottom: -1rem !important;
+  }
+  /* line 3520, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-n3,
+  .mx-xl-n3 {
+    margin-left: -1rem !important;
+  }
+  /* line 3524, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-n4 {
+    margin: -1.5rem !important;
+  }
+  /* line 3527, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-n4,
+  .my-xl-n4 {
+    margin-top: -1.5rem !important;
+  }
+  /* line 3531, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-n4,
+  .mx-xl-n4 {
+    margin-right: -1.5rem !important;
+  }
+  /* line 3535, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-n4,
+  .my-xl-n4 {
+    margin-bottom: -1.5rem !important;
+  }
+  /* line 3539, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-n4,
+  .mx-xl-n4 {
+    margin-left: -1.5rem !important;
+  }
+  /* line 3543, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-n5 {
+    margin: -3rem !important;
+  }
+  /* line 3546, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-n5,
+  .my-xl-n5 {
+    margin-top: -3rem !important;
+  }
+  /* line 3550, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-n5,
+  .mx-xl-n5 {
+    margin-right: -3rem !important;
+  }
+  /* line 3554, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-n5,
+  .my-xl-n5 {
+    margin-bottom: -3rem !important;
+  }
+  /* line 3558, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-n5,
+  .mx-xl-n5 {
+    margin-left: -3rem !important;
+  }
+  /* line 3562, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .m-xl-auto {
+    margin: auto !important;
+  }
+  /* line 3565, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mt-xl-auto,
+  .my-xl-auto {
+    margin-top: auto !important;
+  }
+  /* line 3569, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mr-xl-auto,
+  .mx-xl-auto {
+    margin-right: auto !important;
+  }
+  /* line 3573, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .mb-xl-auto,
+  .my-xl-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 3577, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-grid.min.scss */
+  .ml-xl-auto,
+  .mx-xl-auto {
+    margin-left: auto !important;
+  }
+}
+
+/*# sourceMappingURL=bootstrap-grid.min.css.map */
+/*!
+ * Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+/* line 8, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+/* line 13, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 19, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* line 31, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+/* line 43, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+/* line 46, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* line 51, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* line 60, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 64, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+abbr[data-original-title],
+abbr[title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+/* line 74, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+/* line 79, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 85, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-bottom: 0;
+}
+
+/* line 91, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+dt {
+  font-weight: 700;
+}
+
+/* line 94, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+dd {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+/* line 98, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+blockquote {
+  margin: 0 0 1rem;
+}
+
+/* line 101, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* line 105, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 108, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* line 115, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 118, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 121, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 126, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* line 130, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 134, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 139, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+/* line 142, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+
+/* line 150, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+/* line 155, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+figure {
+  margin: 0 0 1rem;
+}
+
+/* line 158, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* line 162, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/* line 166, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* line 169, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom;
+}
+
+/* line 176, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+th {
+  text-align: inherit;
+}
+
+/* line 179, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* line 183, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+button {
+  border-radius: 0;
+}
+
+/* line 186, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* line 190, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 200, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+button,
+input {
+  overflow: visible;
+}
+
+/* line 204, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 208, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+select {
+  word-wrap: normal;
+}
+
+/* line 211, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+
+/* line 217, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+/* line 223, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+/* line 230, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 235, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"] {
+  -webkit-appearance: listbox;
+}
+
+/* line 241, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+/* line 245, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 251, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+/* line 262, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 265, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 269, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+/* line 273, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 276, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+/* line 280, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+output {
+  display: inline-block;
+}
+
+/* line 283, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+/* line 287, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+template {
+  display: none;
+}
+
+/* line 290, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_bootstrap-reboot.min.scss */
+[hidden] {
+  display: none !important;
+}
+
+/*# sourceMappingURL=bootstrap-reboot.min.css.map */
+@keyframes font {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container {
+    max-width: 960px;
+  }
+  /* line 6, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__item {
+    padding-top: 7px;
+  }
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+  .container .header__item:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 100%;
+  }
+  /* line 9, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__item:before {
+    position: absolute;
+    left: 96px;
+    top: 18px;
+  }
+  /* line 14, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__item-descr {
+    font-size: 16px;
+  }
+  /* line 18, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__title {
+    padding-left: 10px;
+    grid-template: repeat(1, 40px)/repeat(9, 93px);
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 28, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container {
+    max-width: 720px;
+  }
+  /* line 31, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__title {
+    column-gap: 25px;
+    grid-template: repeat(1, 30px)/repeat(9, 65.5px);
+    column-gap: 11px;
+  }
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+  .container .header__item:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 100%;
+  }
+  /* line 38, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__item:before {
+    position: absolute;
+    left: 69px;
+    top: 14.5px;
+  }
+  /* line 43, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__item-descr {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 52, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container {
+    max-width: 540px;
+  }
+  /* line 55, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__title {
+    column-gap: 25px;
+    grid-template: repeat(1, 30px)/repeat(9, 52px);
+    column-gap: 4px;
+    padding-left: 7px;
+  }
+  /* line 62, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__item-descr {
+    font-size: 9px;
+  }
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+  .container .header__item:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 100%;
+  }
+  /* line 66, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__item:before {
+    position: absolute;
+    left: 53px;
+    top: 13px;
+    width: 3px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 576px) {
+  /* line 77, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container {
+    max-width: 320px;
+  }
+  /* line 79, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header {
+    z-index: 1;
+  }
+  /* line 81, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__title {
+    min-height: 15px;
+    column-gap: 10px;
+    grid-template: repeat(1, 5px)/repeat(9, 33px);
+    column-gap: 0;
+    justify-content: center;
+  }
+  /* line 89, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__item {
+    padding-top: 5px;
+  }
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+  .container .header__item:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 100%;
+  }
+  /* line 92, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__item:before {
+    position: absolute;
+    left: 32.5px;
+    top: 7px;
+    width: 2px;
+    height: 2px;
+  }
+  /* line 99, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaheader.scss */
+  .container .header__item-descr {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container {
+    max-width: 960px;
+  }
+  /* line 4, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container hr {
+    color: #bfbbb7;
+    background-color: #bfbbb7;
+    height: 3px;
+    border-radius: 10px;
+    width: 680px;
+  }
+  /* line 13, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container .animation__wrapper {
+    padding-top: 40px;
+    margin-bottom: 0px;
+    padding-left: 150px;
+    grid-template: repeat(1, 300px)/repeat(2, 300px);
+    column-gap: 50px;
+  }
+  /* line 20, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container .animation__wrapper img {
+    height: 300px;
+  }
+  /* line 23, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container .animation__wrapper-descr {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 32, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container {
+    max-width: 720px;
+  }
+  /* line 36, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container .animation__wrapper {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 44, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container {
+    max-width: 540px;
+  }
+  /* line 46, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container hr {
+    color: #bfbbb7;
+    background-color: #bfbbb7;
+    height: 3px;
+    border-radius: 10px;
+    width: 480px;
+  }
+  /* line 55, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container .animation__wrapper {
+    grid-template: repeat(1, 200px)/repeat(2, 200px);
+    column-gap: 45px;
+    padding-left: 35px;
+  }
+  /* line 59, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container .animation__wrapper img {
+    height: 200px;
+  }
+  /* line 62, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container .animation__wrapper-descr {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 71, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container {
+    max-width: 320px;
+  }
+  /* line 73, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container hr {
+    color: #bfbbb7;
+    background-color: #bfbbb7;
+    height: 3px;
+    border-radius: 10px;
+    width: 150px;
+  }
+  /* line 81, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container .animation__wrapper {
+    grid-template: repeat(1, minmax(100px, auto) 20px)/repeat(1, 100px);
+    column-gap: 0;
+    padding-left: 0;
+    justify-content: center;
+  }
+  /* line 86, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container .animation__wrapper img {
+    height: 100px;
+  }
+  /* line 89, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediaanimation.scss */
+  .container .animation__wrapper-descr {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container {
+    max-width: 960px;
+  }
+  /* line 5, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container .footers__title {
+    padding-top: 7px;
+    padding-left: 0px;
+    grid-template: repeat(1, 20px)/repeat(5, 135px);
+    column-gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+  .container .footers__title :nth-child(5n):before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 100%;
+  }
+  /* line 14, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container .footers__title :nth-child(5n):before {
+    width: 0;
+    height: 0;
+  }
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+  .container .footers__items:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 100%;
+  }
+  /* line 22, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container .footers__items:before {
+    position: absolute;
+    left: 141px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 33, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container {
+    max-width: 720px;
+  }
+  /* line 36, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container .footers__title {
+    padding-top: 11px;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    grid-template: repeat(1, 20px)/repeat(5, 132px);
+    column-gap: 7px;
+  }
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+  .container .footers__items:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 100%;
+  }
+  /* line 46, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container .footers__items:before {
+    position: absolute;
+    left: 133.5px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 57, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container {
+    max-width: 540px;
+  }
+  /* line 60, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container .footers__title {
+    grid-template: repeat(2, 20px)/repeat(5, 98px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+  }
+  /* line 67, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container .footers__items-descr {
+    font-size: 10px;
+  }
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+  .container .footers__items:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 100%;
+  }
+  /* line 71, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container .footers__items:before {
+    position: absolute;
+    left: 98px;
+    top: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 82, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container {
+    max-width: 320px;
+  }
+  /* line 85, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container .footers__title {
+    padding-top: 2px;
+    min-height: 40px;
+    grid-template: repeat(2, 15px)/repeat(5, 45px);
+    column-gap: 10px;
+    row-gap: 5px;
+  }
+  /* line 93, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container .footers__items-descr {
+    font-size: 9px;
+  }
+  /* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+  .container .footers__items:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 100%;
+  }
+  /* line 97, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/detali/_mediafooter.scss */
+  .container .footers__items:before {
+    position: absolute;
+    left: 49px;
+    top: 5px;
+    width: 3px;
+    height: 3px;
+  }
+}
+
+/* line 1, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_header.scss */
+header {
+  position: relative;
+}
+
+/* line 5, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_header.scss */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: black;
+}
+
+/* line 10, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_header.scss */
+.header__title {
+  min-height: 30px;
+  display: grid;
+  grid-template: repeat(1, 45px)/repeat(9, 100px);
+  column-gap: 25px;
+}
+
+/* line 16, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_header.scss */
+.header__item {
+  position: relative;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+/* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+.header__item:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 100%;
+}
+
+/* line 21, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_header.scss */
+.header__item:before {
+  position: absolute;
+  left: 110px;
+  top: 21px;
+}
+
+/* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+.header__item:last-child:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 100%;
+}
+
+/* line 28, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_header.scss */
+.header__item:last-child:before {
+  display: none;
+}
+
+/* line 33, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_header.scss */
+.header__item-descr {
+  color: white;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+/* line 39, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_header.scss */
+.header__item-descr a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.6s;
+}
+
+/* line 43, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_header.scss */
+.header__item-descr a:hover {
+  animation-play-state: paused;
+  color: #bfbbb7;
+}
+
+/* line 50, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_header.scss */
+.header__animated {
+  animation: font 1.5s ease infinite;
+  transition: all 0.6s;
+}
+
+/* line 53, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_header.scss */
+.header__animated:hover {
+  animation-play-state: paused;
+  color: #bfbbb7;
+}
+
+/* line 1, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_animation.scss */
+.animation {
+  min-height: 760px;
+  background: grey;
+}
+
+/* line 5, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_animation.scss */
+.animation__wrapper {
+  padding-top: 80px;
+  margin-bottom: 40px;
+  position: relative;
+  display: grid;
+  grid-template: repeat(1, 500px)/repeat(2, 500px);
+  column-gap: 85px;
+}
+
+/* line 12, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_animation.scss */
+.animation__wrapper img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: all 0.6s;
+}
+
+/* line 18, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_animation.scss */
+.animation__wrapper img:hover {
+  cursor: pointer;
+  filter: sepia(25%);
+  box-shadow: 0px 5px 1px 5px #bfbbb7;
+}
+
+/* line 24, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_animation.scss */
+.animation__wrapper-descr {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 96px;
+  font-family: "Rampart One", cursive;
+  transition: all 1s;
+}
+
+/* line 31, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_animation.scss */
+.animation__wrapper-descr:hover {
+  cursor: pointer;
+  color: #bfbbb7;
+  text-shadow: 1px 1px 2px black, 0 0 1em white;
+}
+
+/* line 36, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_animation.scss */
+.animation__wrapper-descr a {
+  color: #bfbbb7;
+  font-family: "Rampart One", cursive;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 44, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_animation.scss */
+.animation__animated {
+  animation: font 1.5s ease infinite;
+  transition: all 0.6s;
+}
+
+/* line 47, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_animation.scss */
+.animation__animated:hover {
+  animation-play-state: paused;
+  color: #bfbbb7;
+}
+
+/* line 1, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_footer.scss */
+.footers {
+  background-color: #212121;
+  z-index: 1;
+  width: 100%;
+}
+
+/* line 7, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_footer.scss */
+.footers__title {
+  min-height: 80px;
+  padding-top: 7px;
+  display: grid;
+  grid-template: repeat(1, 25px)/repeat(9, 100px);
+  column-gap: 20px;
+  row-gap: 15px;
+}
+
+/* line 16, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_footer.scss */
+.footers__animated {
+  animation: font 1.5s ease infinite;
+  transition: all 0.6s;
+}
+
+/* line 19, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_footer.scss */
+.footers__animated:hover {
+  animation-play-state: paused;
+  color: #bfbbb7;
+  cursor: pointer;
+}
+
+/* line 25, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_footer.scss */
+.footers__items {
+  position: relative;
+}
+
+/* line 27, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_footer.scss */
+.footers__items-descr {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 2, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/option/_mixins.scss */
+.footers__items:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 100%;
+}
+
+/* line 33, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_footer.scss */
+.footers__items:before {
+  position: absolute;
+  left: 110px;
+  top: 10px;
+}
+
+/* line 1, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_wow.scss */
+.wow_green {
+  color: #3fe80c;
+}
+
+/* line 3, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/blocks/_wow.scss */
+.wow_green:hover {
+  text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+/* line 21, ../../../../../../Тёmыch/Desktop/my_solo/src/sass/style.sass */
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

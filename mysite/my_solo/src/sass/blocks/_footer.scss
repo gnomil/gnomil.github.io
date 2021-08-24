@@ -1,0 +1,39 @@
+.footers {
+  background-color: #212121;
+
+  z-index: 1;
+  width: 100%;
+
+  &__title {
+    min-height: 80px;
+    padding-top: 7px;
+    display: grid;
+    grid-template: repeat(1, 25px) / repeat(9, 100px);
+    column-gap: 20px;
+    row-gap: 15px;
+  }
+
+  &__animated {
+    animation: font 1.5s ease infinite;
+    transition: all 0.6s;
+    &:hover {
+      animation-play-state: paused;
+      color: #bfbbb7;
+      cursor: pointer;
+    }
+  }
+  &__items {
+    position: relative;
+    &-descr {
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+    @include before_circle;
+    &:before {
+      position: absolute;
+      left: 110px;
+      top: 10px;
+    }
+  }
+}

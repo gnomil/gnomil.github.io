@@ -1,0 +1,52 @@
+.animation {
+  min-height: 760px;
+  background: grey;
+
+  &__wrapper {
+    padding-top: 80px;
+    margin-bottom: 40px;
+    position: relative;
+    display: grid;
+    grid-template: repeat(1, 500px) / repeat(2, 500px);
+    column-gap: 85px;
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 25px;
+      transition: all 0.6s;
+      &:hover {
+        cursor: pointer;
+        filter: sepia(25%);
+        box-shadow: 0px 5px 1px 5px #bfbbb7;
+      }
+    }
+    &-descr {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      font-size: 96px;
+      font-family: "Rampart One", cursive;
+      transition: all 1s;
+      &:hover {
+        cursor: pointer;
+        color: #bfbbb7;
+        text-shadow: 1px 1px 2px black, 0 0 1em white;
+      }
+      a {
+        color: #bfbbb7;
+        font-family: "Rampart One", cursive;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+  &__animated {
+    animation: font 1.5s ease infinite;
+    transition: all 0.6s;
+    &:hover {
+      animation-play-state: paused;
+      color: #bfbbb7;
+    }
+  }
+}
